@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+/***** Estilos gerais *****/
+
+:root {
+    /* Cores como variáveis facilitam alterações posteriores */
+    --cinzaEscuro: rgb(34, 34, 34);
+    --cinzaClaro: #eaecee;
+    --corFooter:#eaecee;
+    --corLink: rgb(34, 34, 187);
+    --corNav: black;
+    --corVisitado: green;
+    --corTextoNav: white;
+    --corLinha: white;
+    --corFundoPrincipal: white;
+}
+
+a {
+    color: var(--corLink);
+}
+
+a:visited {
+    color: var(--corVisitado);
+}
+
+a, h1, h2, h3, h4, h5, h6, em, p, li, span {
+    font-family: 'Fira Sans', 'Segoe', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding:0;
+    display:flex; /* Incluído para garantir footer fixo*/
+    justify-content: center; 
+    flex-direction: column; /* Incluído para garantir footer fixo*/
+    background-image:  linear-gradient(rgba(0,0, 0, .5), rgba(10,10,10, .5)), url('/img/RRSARQ_HEADER_o.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh; /* Incluído para garantir footer fixo*/
+}
+
+
+/*****  Header  *****/
+
+#banner {
+    display:flex;
+    color: var(--corTextoNav);
+    font-weight:300;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+    padding-top: 4em;
+}
+
+.fab {
+    font-size: 1.5em;  
+}
+
+.fab:hover {
+    color: var(--cinzaClaro); 
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha {
+    border-bottom: 2px solid var(--corLinha);
+    margin-bottom: 1em;
+    width:85%;
+    
+}
+
+.logo {
+    width:100px;
+    height:100px;
+    padding: 2em 2em 1em 0;
+    float:left;
+}
+
+.menu {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    align-items: center;
+    list-style: none;
+}
+
+.menuItem {
+    padding:.8em;
+    border-top: .2em solid var(--corNav);
+    width:70px;
+    text-align: center;
+    display: block; /* Aumenta área clicável no link, pode definir height e width */
+}
+
+.menuItem:hover {
+    border-top: .2em solid var(--corTextoNav);
+    color: var(--cinzaClaro);  
+}
+
+.menuItem:focus {
+    border-top: .2em solid var(--corTextoNav);
+    background-color: var(--cinzaEscuro); 
+}
+
+.menuItem:active {
+    background-color: var(--cinzaEscuro)
+}
+
+nav {
+    background-color: var(--corNav);
+    box-shadow: 0px 2px 2px 2px black;
+    color: var(--corTextoNav);
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .9em;
+    font-weight: 500;
+    height:4em;
+    position: fixed;
+    width:100%;
+    cursor:pointer;
+}
+
+.nome {
+    margin-top:1em;
+}
+.social {
+    justify-content: flex-end;
+    padding-right:1em;
+}
+
+.socialItem {
+    padding:.6em;
+    border-top: .2em solid var(--corNav);
+    width:50px;
+    text-align: center;
+    display: block; /* Aumenta área clicável no link, pode definir height e width */
+}
+
+.socialItem:hover {
+    border-top: .2em solid var(--corTextoNav);
+}
+
+.socialItem:focus {
+    border-top: .2em solid var(--corTextoNav);
+    background-color: var(--cinzaEscuro); 
+}
+
+.socialItem:active {
+    background-color: var(--cinzaEscuro);
+}
+
+.subTitulo {
+    font-size: 24px;
+}
+
+.titulo {
+    font-size: 32px;
+}
+
+/* Regras para os links da navbar não terem decoração e cores */
+
+ul.menu a {
+    color: var(--corTextoNav);
+    text-decoration: none !important;
+}
+
+ul.menu a:link {
+    text-decoration: none !important;
+}
+
+
+/*****  Main  *****/
+
+main {
+    display:flex;
+    justify-content: center;
+    padding-bottom:2.5em;
+    flex: 1 0 auto; /* Incluído para garantir footer fixo*/        
+}
+
+#principal {
+    display:flex;
+    flex-direction: column;
+    background-color: var(--corFundoPrincipal);
+    min-height: 70%;
+    width:50%;
+    font-size:1em;
+    font-weight: 200;
+    justify-content: center;
+    padding:3em 4em 3em 4em;
+    margin-top:1em;
+    margin-bottom:5em;
+}
+
+
+/*****  Footer  *****/
+
+footer {
+    background-color: var(--corFooter);
+    font-weight:100;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 2em 2em 1.5em 2em;
+    font-size: .9em;
+    flex-shrink: 0; /* Incluído para garantir footer fixo*/
+}
+
+.small {
+    font-size: .8em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topo {
+
+}
