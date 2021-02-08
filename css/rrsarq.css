@@ -62,6 +62,11 @@ body {
     color: var(--cinzaClaro); 
 }
 
+.mais {
+    font-size: .5em;
+    vertical-align: middle;
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -82,12 +87,99 @@ header {
     float:left;
 }
 
+
+
+.dropdown {
+    position: relative;/*necessário para poder definir position:absolute no submenu*/
+
+    /* regras copiadas de menuItem */
+    padding:.8em;
+    border-top: .2em solid var(--corNav);
+    width:70px;
+    text-align: center;
+    display: block; /* Aumenta área clicável no link, pode definir height e width. */
+
+}
+
+.dropdown:hover {
+    border-top: .2em solid var(--corTextoNav);
+    color: var(--cinzaClaro);  
+}
+
+.dropdown:hover .dropdownContent {
+    visibility: visible;
+}
+
+.dropdown:focus-within .dropdownContent { /* regra resolve a navegação dos itens com o teclado */
+    visibility: visible;
+}
+
+.dropdown:focus-within { /*focus-within permitir estilizar o elemento pai do elemento que é focado, nesse caso, a tag <a> */
+    border-top: .2em solid var(--corTextoNav);
+    background-color: var(--cinzaEscuro); 
+}
+
+.dropdownContent {
+    visibility: hidden;
+    position: absolute;
+    top:40px; /*posição do topo do submenu*/
+    left: 0px;
+    margin-left:0px;
+    border-top: none;
+    white-space: nowrap;/* regra para deixar o texto por extenso*/
+    
+}
+
+.subMenu{
+    list-style-type: none;
+    background-color: var(--corNav);
+    padding-left: 1em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+}
+
+.subItem:focus-within { /*focus-within permitir estilizar o elemento pai do elemento que é focado, nesse caso, a tag <a> */
+    background-color: var(--cinzaEscuro); 
+    border-left: .2em solid white;
+}
+
+.subItem {
+    border-left: .2em solid var(--corNav);
+    margin-top: .5em;
+    margin-right: 1em;
+    display: block;
+    width: 270px;
+    text-align: left;
+    padding: .5em 0 .5em 1em;
+    
+}
+
+.subItem:hover {
+    border-left: .2em solid white;
+    color: var(--cinzaClaro);
+}
+
+/* Regras para os links da navbar não terem decoração e cores */
+
+ul.menu a {
+    color: var(--corTextoNav);
+    text-decoration: none !important;
+}
+
+ul.menu a:link {
+    text-decoration: none !important;
+}
+
+ul.menu li:focus-within a { /* regra para tirar o outline padrão do navegador em links do menu */
+    outline: none;
+}
+
 .menu {
     display:flex;
     justify-content: space-around;
     width:100%;
     align-items: center;
-    list-style: none;
+    list-style-type: none;
 }
 
 .menuItem {
@@ -103,7 +195,7 @@ header {
     color: var(--cinzaClaro);  
 }
 
-.menuItem:focus {
+.menuItem:focus-within { /*focus-within permitir estilizar o elemento pai do elemento que é focado, nesse caso, a tag <a> */
     border-top: .2em solid var(--corTextoNav);
     background-color: var(--cinzaEscuro); 
 }
@@ -147,7 +239,7 @@ nav {
     border-top: .2em solid var(--corTextoNav);
 }
 
-.socialItem:focus {
+.socialItem:focus-within { /* Detalhe do focus-within */
     border-top: .2em solid var(--corTextoNav);
     background-color: var(--cinzaEscuro); 
 }
@@ -164,16 +256,8 @@ nav {
     font-size: 32px;
 }
 
-/* Regras para os links da navbar não terem decoração e cores */
 
-ul.menu a {
-    color: var(--corTextoNav);
-    text-decoration: none !important;
-}
 
-ul.menu a:link {
-    text-decoration: none !important;
-}
 
 
 /*****  Main  *****/
