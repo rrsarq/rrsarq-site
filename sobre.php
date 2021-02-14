@@ -15,15 +15,16 @@
 
 <main>
     <article class="principal">
+    <div>
     <h1>Sobre rrs.arq</h1>
-    <p>Engenheiro de Segurança do Trabalho formado pela Universidade Federal do Rio Grande do Sul (UFRGS), com experiência no setor público e privado, em trabalhos voltados à proteção contra incêndios (PPCI) - edificações residenciais, comerciais, industriais, públicas, elaboração e implementação de Programa de Prevenção de Riscos Ambientais (PPRA) e Análise Ergonômica do Trabalho (AET), além de atuação como Assistente Técnico em Perícias Judiciais.
-
-Arquiteto e Urbanista formado pela UFRGS, com experiência em projetos urbanísticos (loteamentos, relação com patrimônio natural), paisagísticos e de edificações (construções novas, regularizações, manutenção e reforma), elaboração e gestão de projetos públicos, destacando aqueles relacionados a recursos externos (OGU, PAC) e projetos de sinalização turística e de segurança viária.
-
-Conheça mais dos serviços prestados.
-
-Além disso, possui experiência na produção de imagens, como perspectivas e visualizações para arquitetura e ilustrações artísticas. Confira no Portfólio Virtual.</p>
-
+    <p>Engenheiro de Segurança do Trabalho com experiência no setor público e privado, em trabalhos voltados à prevenção e proteção contra incêndios; elaboração e implementação de Programa de Prevenção de Riscos Ambientais e Análise Ergonômica do Trabalho, além de atuação como Assistente Técnico em Perícias Judiciais.</p>
+    <p>Arquiteto e Urbanista com experiência em projetos urbanísticos (loteamentos, relação com patrimônio natural), paisagísticos e de edificações (construções novas, regularizações, manutenção e reforma), elaboração e gestão de projetos públicos, destacando aqueles relacionados a recursos externos (<abbr title="Orçamento Geral da União">OGU</abbr>, <abbr title="Programa de Aceleração do Crescimento">PAC</abbr>) e projetos de sinalização turística e de segurança viária.</p>
+    <p>Conheça mais sobre os <a href="servicos.php">serviços realizados.</a></p>
+    </div>
+    <div>
+    <p>Além disso, possui experiência na produção de imagens, como perspectivas e visualizações para arquitetura e ilustrações artísticas.</p> 
+    <p>Uma amostra desses trabalhos está disponível na <a href="#">galeria</a>.</p>
+    </div>
     </article>
 </main>
 

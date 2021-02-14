@@ -304,6 +304,25 @@ main {
     margin-bottom:5em;
 }
 
+.lista {
+    list-style-type: none;
+}
+
+ul.lista > li {
+    padding: 1em 0 1em 0;
+    border-bottom: 1px solid var(--cinzaClaro);
+}
+
+.subLista {
+    border-bottom: 1px solid var(--cinzaClaro);
+    list-style-type: none;
+    padding: 1em 0 1em 0;
+}
+
+.subListaFim { /* O item final da sublista não tem que ter linha embaixo, nem padding, se não espaço fica mui grande */
+    list-style-type: none;
+    padding: 1em 0 0 0;
+}
 
 /*****  Footer  *****/
 

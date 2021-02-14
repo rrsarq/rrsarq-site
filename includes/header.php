@@ -3,7 +3,7 @@
         <ul class="menu">
             <li class="menuItem"><a href="index.php">Início</a></li>
             <li class="menuItem"><a href="sobre.php">Sobre</a></li>
-            <li class="dropdown"><a href="#">Serviços <i class="mais fas fa-plus"></i></a>
+            <li class="dropdown"><a href="servicos.php">Serviços <i class="mais fas fa-plus"></i></a>
                 <div class="dropdownContent">
                     <ul class="subMenu">
                         <li class="subItem"><a href="servicos.php#engseg">Segurança do Trabalho e Ergonomia</a></li>
