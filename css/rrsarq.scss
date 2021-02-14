@@ -1,0 +1,342 @@
+/*! Author: rrs.arq.br */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,500;1,300;1,500&display=swap');
+
+/***** Estilos gerais *****/
+
+:root {
+    /* Cores como variáveis facilitam alterações posteriores */
+    --cinzaEscuro: rgb(34, 34, 34);
+    --cinzaClaro: #eaecee;
+    --corFooter:#eaecee;
+    --corLink: #1801a2;
+    --corNav: black;
+    --corVisitado: #6801a2;
+    --corTextoNav: white;
+    --corLinha: white;
+    --corFundoPrincipal: white;
+}
+
+a {
+    color: var(--corLink);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    border-bottom: .1em solid var(--corLink);
+}
+
+a:visited {
+    color: var(--corVisitado);
+}
+
+a:visited:hover {
+    border-bottom: .1em solid var(--corVisitado);
+}
+
+a, h1, h2, h3, h4, h5, h6, em, p, li, span {
+    font-family: 'Fira Sans', 'Segoe', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding:0;
+    display:flex; /* Incluído para garantir footer fixo*/
+    justify-content: center; 
+    flex-direction: column; /* Incluído para garantir footer fixo*/
+    background-image:  linear-gradient(rgba(0,0, 0, .5), rgba(10,10,10, .5)), url('../img/RRSARQ_HEADER_o.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh; /* Incluído para garantir footer fixo*/
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+/*****  Header  *****/
+
+#banner {
+    display:flex;
+    color: var(--corTextoNav);
+    font-weight:300;
+    align-items: center;
+    justify-content: center;
+    padding:1em;
+    padding-top: 4em;
+}
+
+.fab {
+    font-size: 1.5em;  
+}
+
+.fab:hover {
+    color: var(--cinzaClaro); 
+}
+
+.mais {
+    font-size: .5em;
+    vertical-align: middle;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linha {
+    border-bottom: 2px solid var(--corLinha);
+    margin-bottom: 1em;
+    width:85%;
+    
+}
+
+.logo {
+    width:100px;
+    height:100px;
+    padding: 2em 2em 1em 0;
+    float:left;
+}
+
+
+
+.dropdown {
+    position: relative;/*necessário para poder definir position:absolute no submenu*/
+
+    /* regras copiadas de menuItem */
+    padding:.8em;
+    border-top: .2em solid var(--corNav);
+    width:70px;
+    text-align: center;
+    display: block; /* Aumenta área clicável no link, pode definir height e width. */
+
+}
+
+.dropdown:hover {
+    border-top: .2em solid var(--corTextoNav);
+    color: var(--cinzaClaro);  
+}
+
+.dropdown:hover .dropdownContent {
+    visibility: visible;
+}
+
+.dropdown:focus-within .dropdownContent { /* regra resolve a navegação dos itens com o teclado */
+    visibility: visible;
+}
+
+.dropdown:focus-within { /*focus-within permitir estilizar o elemento pai do elemento que é focado, nesse caso, a tag <a> */
+    border-top: .2em solid var(--corTextoNav);
+    background-color: var(--cinzaEscuro); 
+}
+
+.dropdownContent {
+    visibility: hidden;
+    position: absolute;
+    top:40px; /*posição do topo do submenu*/
+    left: 0px;
+    margin-left:0px;
+    border-top: none;
+    white-space: nowrap;/* regra para deixar o texto por extenso*/
+    
+}
+
+.subMenu{
+    list-style-type: none;
+    background-color: var(--corNav);
+    padding-left: 1em;
+    padding-top:.5em;
+    padding-bottom:.5em;
+}
+
+.subItem:focus-within { /*focus-within permitir estilizar o elemento pai do elemento que é focado, nesse caso, a tag <a> */
+    background-color: var(--cinzaEscuro); 
+    border-left: .2em solid white;
+}
+
+.subItem {
+    border-left: .2em solid var(--corNav);
+    margin-top: .5em;
+    margin-right: 1em;
+    display: block;
+    width: 270px;
+    text-align: left;
+    padding: .5em 0 .5em 1em;
+    
+}
+
+.subItem:hover {
+    border-left: .2em solid white;
+    color: var(--cinzaClaro);
+}
+
+/* Regras para os links da navbar não terem decoração e cores */
+
+
+ul.menu a, ul.menu a:hover {
+    color: var(--corTextoNav);
+    text-decoration: none !important;
+    border-bottom: none;
+}
+
+ul.menu a:link {
+    text-decoration: none !important;
+    border-bottom: none;
+}
+
+ul.menu li:focus-within a { /* regra para tirar o outline padrão do navegador em links do menu */
+    outline: none;
+}
+
+.menu {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menuItem {
+    padding:.8em;
+    border-top: .2em solid var(--corNav);
+    width:70px;
+    text-align: center;
+    display: block; /* Aumenta área clicável no link, pode definir height e width */
+}
+
+.menuItem:hover {
+    border-top: .2em solid var(--corTextoNav);
+    color: var(--cinzaClaro);  
+}
+
+.menuItem:focus-within { /*focus-within permitir estilizar o elemento pai do elemento que é focado, nesse caso, a tag <a> */
+    border-top: .2em solid var(--corTextoNav);
+    background-color: var(--cinzaEscuro); 
+}
+
+.menuItem:active {
+    background-color: var(--cinzaEscuro)
+}
+
+nav {
+    background-color: var(--corNav);
+    box-shadow: 0px 2px 2px 2px black;
+    color: var(--corTextoNav);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .9em;
+    font-weight: 500;
+    height: 4em;
+    position: fixed;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nome {
+    margin-top: 1em;
+}
+.social {
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+
+.socialItem {
+    padding:.6em;
+    border-top: .2em solid var(--corNav);
+    width:50px;
+    text-align: center;
+    display: block; /* Aumenta área clicável no link, pode definir height e width */
+}
+
+.socialItem:hover {
+    border-top: .2em solid var(--corTextoNav);
+}
+
+.socialItem:focus-within { /* Detalhe do focus-within */
+    border-top: .2em solid var(--corTextoNav);
+    background-color: var(--cinzaEscuro); 
+}
+
+.socialItem:active {
+    background-color: var(--cinzaEscuro);
+}
+
+.subTitulo {
+    font-size: 24px;
+}
+
+.titulo {
+    font-size: 32px;
+}
+
+
+
+
+
+/*****  Main  *****/
+
+main {
+    display:flex;
+    justify-content: center;
+    padding-bottom:2.5em;
+    flex: 1 0 auto; /* Incluído para garantir footer fixo*/        
+}
+
+.principal {
+    display:flex;
+    flex-direction: column;
+    background-color: var(--corFundoPrincipal);
+    min-height: 70%;
+    width:50%;
+    font-weight: 200;
+    justify-content: center;
+    padding:3em 4em 3em 4em;
+    margin-top:1em;
+    margin-bottom:5em;
+}
+
+
+/*****  Footer  *****/
+
+footer {
+    background-color: var(--corFooter);
+    font-weight:100;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 2em 2em 1.5em 2em;
+    font-size: .9em;
+    flex-shrink: 0; /* Incluído para garantir footer fixo*/
+}
+
+.small {
+    font-size: .8em;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a.topo{
+    color:black;
+    font-weight: 300;
+}
+
+a.topo:visited {
+    color: black;
+    
+}
+
+.fa-caret-up {
+    font-size: 1.5em;
+    padding-left: .2em;
+}
