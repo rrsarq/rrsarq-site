@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>rrs.arq | arquitetura + engenharia de segurança do trabalho</title>
+    <title>rrs.arq | Sobre rrs.arq</title>
     
-    <meta name="description" content="Conheça mais do trabalho de rrs.arq: arquitetura + engenharia de segurança + tecnologia">
+    <meta name="description" content="Conheça mais sobre rrs.arq">
     <meta name="keywords"  content="arquitetura, engenharia, segurança, ergonomia, tecnologia">
 
 <?php include 'includes/head.php' ?>
@@ -24,6 +24,8 @@
     <div>
     <p>Além disso, possui experiência na produção de imagens, como perspectivas e visualizações para arquitetura e ilustrações artísticas.</p> 
     <p>Uma amostra desses trabalhos está disponível na <a href="#">galeria</a>.</p>
+
+    <p>Confira também o conteúdo no <a href="https://twitter.com/rrsarq">Twitter</a>, <a href="https://www.youtube.com/channel/UC4ZTJH9A3522EOc84iemBWQ">YouTube</a> e <a href="https://github.com/rrsarq">GitHub</a>.</p>
     </div>
     </article>
 </main>

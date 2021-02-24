@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>rrs.arq | arquitetura + engenharia de segurança do trabalho</title>
+    <title>rrs.arq | Arquitetura + engenharia de segurança do trabalho</title>
     
-    <meta name="description" content="Conheça mais do trabalho de rrs.arq: arquitetura + engenharia de segurança + tecnologia">
+    <meta name="description" content="rrs.arq: arquitetura + engenharia de segurança + tecnologia">
     <meta name="keywords"  content="arquitetura, engenharia, segurança, ergonomia, tecnologia">
 
 <?php include 'includes/head.php' ?>

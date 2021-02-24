@@ -1,23 +1,23 @@
 <header>
     <nav>
         <ul class="menu">
-            <li class="menuItem"><a href="index.php">Início</a></li>
-            <li class="menuItem"><a href="sobre.php">Sobre</a></li>
-            <li class="dropdown"><a href="servicos.php">Serviços <i class="mais fas fa-plus"></i></a>
-                <div class="dropdownContent">
+            <li class="menuItem"><a class="menuLink" href="index.php">Início</a></li>
+            <li class="menuItem"><a class="menuLink" href="sobre.php">Sobre</a></li>
+            <li class="dropdown"><a class="menuLink" href="servicos.php">Serviços <i class="fas fa-plus"></i></a>
+                <div class="dropdownMenu">
                     <ul class="subMenu">
-                        <li class="subItem"><a href="servicos.php#engseg">Segurança do Trabalho e Ergonomia</a></li>
-                        <li class="subItem"><a href="servicos.php#arq">Arquitetura e Urbanismo</a></li>
+                        <li class="subItem"><a class="menuLink" href="servicos.php#engseg">Segurança do Trabalho e Ergonomia</a></li>
+                        <li class="subItem"><a class="menuLink" href="servicos.php#arq">Arquitetura e Urbanismo</a></li>
                     </ul>
                  </div>
             </li>
-            <li class="menuItem"><a href="#">Galeria</a></li>
-            <li class="menuItem"><a href="https://rrsarq.github.io/">Blog</a></li>
+            <li class="menuItem"><a class="menuLink" href="#">Galeria</a></li>
+            <li class="menuItem"><a class="menuLink" href="https://rrsarq.github.io/">Blog</a></li>
         </ul>
         <ul class="menu social">
-            <li class="socialItem"><a href="https://twitter.com/rrsarq" ><i class="fab fa-twitter"></i></a></li>
-            <li class="socialItem"><a href="https://www.youtube.com/channel/UC4ZTJH9A3522EOc84iemBWQ" ><i class="fab fa-youtube"></i></a></li>
-            <li class="socialItem"><a href="https://github.com/rrsarq" ><i class="fab fa-github"></i></a></li>
+            <li class="socialItem"><a class="menuLink" href="https://twitter.com/rrsarq" ><i class="fab fa-twitter"></i></a></li>
+            <li class="socialItem"><a class="menuLink" href="https://www.youtube.com/channel/UC4ZTJH9A3522EOc84iemBWQ" ><i class="fab fa-youtube"></i></a></li>
+            <li class="socialItem"><a class="menuLink" href="https://github.com/rrsarq" ><i class="fab fa-github"></i></a></li>
         </ul>
     </nav>
     <div id="banner">
