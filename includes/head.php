@@ -5,5 +5,7 @@
     <link rel="stylesheet" href="css/rrsarq.css">
     <link rel="stylesheet" href="css/all.min.css">
     
-    <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/popper.min.js"></script>
+    <?php 
+    # <script src="js/jquery-3.5.1.js"></script>
+    # <script src="js/popper.min.js"></script>
+    ?>
