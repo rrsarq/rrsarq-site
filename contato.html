@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>rrs.arq | Contato</title>
+	
+	<meta name="description" content="Entre em contato com rrs.arq">
+	<meta name="keywords"  content="arquitetura, engenharia, segurança, ergonomia, tecnologia">
+	
+	<meta charset="UTF-8">
+	<meta name="author" content="rrs.arq">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/RRSARQ_FAVICON.ico">
+	<link rel="stylesheet" href="css/rrsarq.css">
+	<link rel="stylesheet" href="css/all.min.css"> 
+</head>
+<body>
+	<header id="header"></header>
+	<main>
+		<article class="principal">
+			<h1>Contato</h1>
+			<form class="formulario" method="post" name="contato" data-netlify="true">
+				<div class="formGrupo">
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" maxlength="50" required>
+				</div>
+				<div class="formGrupo">
+					<label for="email">E-mail:</label>
+					<input type="email" id="email" name="email" maxlength="50" required>
+				</div>
+				<div class="formGrupo">
+					<label for="mensagem">Mensagem:</label>
+					<textarea type="text" id="mensagem" name="mensagem" maxlength="255" required></textarea>
+				</div>
+				<button type="submit">Enviar</button>
+			</form>
+		</article>
+	</main>
+	<footer id="footer"></footer>
+
+	<script src="js/includes.js"></script>
+
+</body>
+</html>
