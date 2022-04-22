@@ -18,7 +18,10 @@
 	<main>
 		<article class="principal">
 			<h1>Sua mensagem foi enviada com sucesso!</h1>
-			<a href="contato.html">Voltar</a>
+			<p>Se você não for redirecionado, <a href="contato.html">clique aqui para voltar</a>.</p>
+			<script>
+				window.setTimeout(()=>{window.location.href = "contato.html"},2000)
+			</script>	
 		</article>
 	</main>
 	<footer id="footer"></footer>

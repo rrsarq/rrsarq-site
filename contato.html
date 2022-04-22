@@ -18,7 +18,7 @@
 	<main>
 		<article class="principal">
 			<h1>Contato</h1>
-			<form class="formulario" method="post" name="contato" data-netlify="true" action="/contato-sucesso.html">
+			<form class="formulario" method="post" name="contato" data-netlify="true" action="/contato-sucesso.html" netlify-honeypot="bot-field" data-netlify-recaptcha="true">
 				<div class="formGrupo">
 					<label for="nome">Nome:</label>
 					<input type="text" id="nome" name="nome" maxlength="50" required>
@@ -31,6 +31,8 @@
 					<label for="mensagem">Mensagem:</label>
 					<textarea type="text" id="mensagem" name="mensagem" maxlength="255" required></textarea>
 				</div>
+				<input name="bot-field" class="invisivel">
+				<div data-netlify-recaptcha="true"></div>
 				<button type="submit">Enviar</button>
 			</form>
 		</article>
