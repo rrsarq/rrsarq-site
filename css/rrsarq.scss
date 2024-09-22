@@ -5,11 +5,38 @@
     src: url("../webfonts/FiraSans-Light.ttf");
     font-display: swap;
 }
+
 @font-face {
     font-family: "Fira Sans Light-Italic";
     src: url("../webfonts/FiraSans-LightItalic.ttf");
     font-display: swap;
 }
+
+@font-face {
+    font-family: "Futura Renner Light";
+    src: url("../webfonts/FuturaRenner-Light.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Futura Renner Regular";
+    src: url("../webfonts/FuturaRenner-Regular.woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost Regular";
+    src: url("../webfonts/Jost-Regular.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jost Regular-Italic";
+    src: url("../webfonts/Jost-ExtraLightItalic.ttf");
+    font-display: swap;
+}
+
+
 
 /***** Estilos gerais *****/
 
@@ -50,7 +77,7 @@ a:visited:hover {
 }
 
 a, h1, h2, h3, h4, h5, h6, p, em, li, span, label, input, textarea, button {
-    font-family: 'Fira Sans Light', 'Segoe UI', sans-serif;
+    font-family: 'Jost Regular', 'Segoe UI', sans-serif;
 }
 
 body {
@@ -294,10 +321,12 @@ nav {
 
 .subTitulo {
     font-size: 24px;
+	font-family: "Futura Renner Regular";
 }
 
 .titulo {
     font-size: 32px;
+	font-family: "Futura Renner Regular";
 }
 
 /*****  Main  *****/
